@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import HeroImage from "../../assets/gourmet.jpg";
+import HeroImage from "../../assets/hero.jpg";
 import "./Hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero-section-background">
-      <div className="hero-section-container">
-        <div className="section-left">
+    <div className="hero">
+      <div className="hero-container">
+        <div className="hero-left">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <p>
@@ -15,11 +15,12 @@ const Hero = () => {
             traditional recipes served with a modern twist.
           </p>
           <NavLink to="/reservations">
-            <button className="btn">Reserve a Table</button>
+            <button className="reserve-btn">Reserve a Table</button>
           </NavLink>
         </div>
-        <div className="section-right">
-          <div className="image-box">
+
+        <div className="hero-right">
+          <div className="hero-image">
             <img src={HeroImage} alt="Serving delicious dish" />
           </div>
         </div>
