@@ -1,14 +1,13 @@
-import Footer from "./component/footer/Footer";
-import Header from "./component/header/Header";
-import Main from "./component/main/Main";
+import { Route, Routes } from "react-router-dom";
+import Homepage from "./pages/Homepage";
 import "./styles.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+    </>
   );
 }
