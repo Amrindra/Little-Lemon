@@ -1,5 +1,5 @@
+import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import Nav from "../components/header/Nav";
 import Hero from "../components/hero/Hero";
 
 const Homepage = () => {
@@ -7,6 +7,7 @@ const Homepage = () => {
     <>
       <Header />
       <Hero />
+      <Footer />
     </>
   );
 };
