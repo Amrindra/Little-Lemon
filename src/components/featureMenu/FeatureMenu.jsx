@@ -36,20 +36,26 @@ const FeatureMenu = () => {
   ];
 
   return (
-    <div className="feature-menu">
-      {cardMenu.map((item) => {
-        const { image, title, price, description, order, id } = item;
-        return (
-          <Card
-            key={id}
-            image={image}
-            title={title}
-            price={price}
-            description={description}
-            order={order}
-          />
-        );
-      })}
+    <div className="feature-menu-container">
+      <div className="feature-menu-top">
+        .<h3>Thi week specails!</h3>
+      </div>
+
+      <div className="feature-menu-bottom">
+        {cardMenu.map((item) => {
+          const { image, title, price, description, order, id } = item;
+          return (
+            <Card
+              key={id}
+              image={image}
+              title={title}
+              price={price}
+              description={description}
+              order={order}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

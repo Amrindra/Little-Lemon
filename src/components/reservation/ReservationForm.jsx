@@ -10,13 +10,10 @@ const schema = yup.object({
     .string()
     .required("Email is a required field!")
     .email("Email is not valid!"),
-  telephone: yup
-    .string()
-    .required("Telephone is a required field!")
-    .matches(
-      /^(\+\d{2,3}\s)?\(?\d{3}\)?[\s.-]\d{2}[\s.-]\d{3}[\s.-]\d{4}$/,
-      "Phone number must match the form 233 00 000 0000"
-    ),
+  telephone: yup.string().required("Telephone is a required field!").matches(
+    // /^(\+\d{2,3}\s)?\(?\d{3}\)?[\s.-]\d{2}[\s.-]\d{3}[\s.-]\d{4}$/,
+    "Phone number must match the form 233 00 000 0000"
+  ),
   guests: yup
     .number()
     .min(1, "There must be at least 1 guest!")
@@ -40,10 +37,13 @@ function ReservationForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(formSubmit)}>
+    <form
+      onSubmit={handleSubmit(formSubmit)}
+      className="reservation-form-wrapper"
+    >
       <fieldset>
         <div className="field">
-          <label htmlFor="name">Full Name</label>
+          <label htmlFor="name">Full Name*</label>
           <input
             type="text"
             placeholder="John Doe"
@@ -54,7 +54,7 @@ function ReservationForm() {
         </div>
 
         <div className="field">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email*</label>
           <input
             type="text"
             placeholder="text@email.com"
@@ -65,7 +65,7 @@ function ReservationForm() {
         </div>
 
         <div className="field">
-          <label htmlFor="telephone">Telephone</label>
+          <label htmlFor="telephone">Telephone*</label>
           <input
             type="tel"
             placeholder="233 00 000 0000"
@@ -103,7 +103,7 @@ function ReservationForm() {
           <input type="datetime-local" name="date" {...register("date")} />
           <span className="error-message">{errors.date?.message}</span>
         </div>
-        <button className="reserve-btn" type="submit">
+        <button className="reservation-form-btn" type="submit">
           Reserve
         </button>
       </fieldset>

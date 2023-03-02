@@ -3,9 +3,9 @@ import ReservationForm from "./ReservationForm";
 
 function Reservation() {
   return (
-    <div className="res-content-wrapper">
-      <div className="res-content-container">
-        <div className="text">
+    <div className="reservation-wrapper">
+      <div className="reservation-container">
+        <div className="reservation-text">
           <h2>Experience the perfect balance of tradition and luxury.</h2>
           <p>
             At Little Lemon, we take great pride in providing our customers with
@@ -14,7 +14,7 @@ function Reservation() {
           </p>
           <p>Book a table with us to share in this experience.</p>
         </div>
-        <div className="form">
+        <div className="reservation-form">
           <h1>Reserve a Table</h1>
           <p>
             Please fill in and submit form to book your reservation at Little
