@@ -17,7 +17,7 @@ const Card = ({ image, title, price, description, order }) => {
 
         <Link to="#">
           <div className="card-order-btn">
-            <button>Order for delivery</button>
+            <button>{order}</button>
           </div>
         </Link>
       </div>
