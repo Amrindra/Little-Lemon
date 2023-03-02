@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-left">
           <h1>Little Lemon</h1>
-          <h2>Chicago</h2>
+          <h2>Boston</h2>
           <p>
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.

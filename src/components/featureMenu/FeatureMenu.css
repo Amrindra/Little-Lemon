@@ -1,0 +1,21 @@
+.feature-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .feature-menu {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .feature-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
