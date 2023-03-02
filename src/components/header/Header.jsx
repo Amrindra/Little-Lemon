@@ -5,7 +5,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="header">
+    <div className="header">
       <div className="header-wrapper">
         <div className="image-wrapper">
           <NavLink to="/">
@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <Nav />
       </div>
-    </header>
+    </div>
   );
 };
 
