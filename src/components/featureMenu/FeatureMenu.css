@@ -1,5 +1,5 @@
 .feature-menu-container {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .feature-menu-top {
@@ -15,14 +15,21 @@
 }
 
 .feature-menu-top-button {
-  padding: 15px 0px;
-  font-size: 18px;
+  height: 60px;
+  padding: 15px 30px;
+  font-weight: 600;
   background-color: #f4ce14;
-  border: none;
+  color: #333333;
   border-radius: 20px;
-  cursor: pointer;
+  border: none;
   font-size: 24px;
-  width: 200px;
+}
+
+.feature-menu-top-button:hover {
+  cursor: pointer;
+  background-color: #333333;
+  color: #f4ce14;
+  transition: 0.3s;
 }
 
 .feature-menu-bottom {
@@ -41,8 +48,23 @@
 }
 
 @media screen and (max-width: 780px) {
+  .feature-menu-container {
+    margin-top: 140px;
+  }
+
   .feature-menu-bottom {
     display: flex;
     flex-direction: column;
+  }
+
+  .feature-menu-top-title {
+    font-size: 40px;
+  }
+
+  .feature-menu-top-button {
+    height: 50px;
+    padding: 15px 30px;
+    font-size: 14px;
+    width: 200px;
   }
 }

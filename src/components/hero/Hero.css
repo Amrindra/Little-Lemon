@@ -1,6 +1,7 @@
 .hero {
   background-color: #495e57;
   width: 100%;
+  height: 500px;
 }
 
 .hero-container {
@@ -32,7 +33,7 @@ h2 {
 
 .reserve-btn {
   padding: 15px 30px;
-  font-size: 16pt;
+  font-size: 1.2rem;
   font-weight: 600;
   background-color: #f4ce14;
   color: #333333;
@@ -49,17 +50,18 @@ h2 {
 
 .hero-right {
   position: relative;
-  width: 400px;
+  width: 450px;
 }
 
 .hero-image {
-  height: 400px;
+  height: 500px;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
+  top: 30px;
 }
 
 .hero-image img {
@@ -67,10 +69,6 @@ h2 {
 }
 
 @media screen and (max-width: 1024px) {
-  .hero {
-    padding-top: 10vh;
-  }
-
   .hero-image {
     right: 0;
     width: 300px;
@@ -92,6 +90,9 @@ h2 {
 }
 
 @media screen and (max-width: 659px) {
+  .hero {
+    height: 450px;
+  }
   .hero-container {
     flex-direction: column;
   }
@@ -109,8 +110,7 @@ h2 {
 
   .hero-right {
     position: initial;
-    margin-top: 30px;
-    margin-bottom: -100px;
+    margin-top: 35px;
     width: 100%;
   }
 
