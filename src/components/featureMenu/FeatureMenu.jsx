@@ -38,10 +38,11 @@ const FeatureMenu = () => {
   return (
     <div className="feature-menu-container">
       <div className="feature-menu-top">
-        .<h3>Thi week specails!</h3>
+        <h3 className="feature-menu-top-title">This week specails!</h3>
+        <button className="feature-menu-top-button">Online Menu</button>
       </div>
 
-      <div className="feature-menu-bottom">
+      <article className="feature-menu-bottom">
         {cardMenu.map((item) => {
           const { image, title, price, description, order, id } = item;
           return (
@@ -55,7 +56,7 @@ const FeatureMenu = () => {
             />
           );
         })}
-      </div>
+      </article>
     </div>
   );
 };
