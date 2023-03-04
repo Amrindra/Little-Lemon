@@ -10,10 +10,11 @@ const schema = yup.object({
     .string()
     .required("Email is a required field!")
     .email("Email is not valid!"),
-  telephone: yup.string().required("Telephone is a required field!").matches(
-    // /^(\+\d{2,3}\s)?\(?\d{3}\)?[\s.-]\d{2}[\s.-]\d{3}[\s.-]\d{4}$/,
-    "Phone number must match the form 233 00 000 0000"
-  ),
+  cellPhone: yup.string().required("Telephone is a required field!"),
+  // .matches(
+  //   /^(\+\d{2,3}\s)?\(?\d{3}\)?[\s.-]\d{2}[\s.-]\d{3}[\s.-]\d{4}$/,
+  //   "Phone number must match the form 233 00 000 0000"
+  // ),
   guests: yup
     .number()
     .min(1, "There must be at least 1 guest!")
@@ -29,8 +30,6 @@ function ReservationForm() {
   } = useForm({
     resolver: yupResolver(schema)
   });
-
-  console.log(errors);
 
   const formSubmit = (data) => {
     console.table(data);
@@ -57,7 +56,7 @@ function ReservationForm() {
           <label htmlFor="email">Email*</label>
           <input
             type="text"
-            placeholder="text@email.com"
+            placeholder="jonhdoe@email.com"
             name="email"
             {...register("email")}
           />
@@ -65,12 +64,12 @@ function ReservationForm() {
         </div>
 
         <div className="field">
-          <label htmlFor="telephone">Telephone*</label>
+          <label htmlFor="cellPhone">Cell Phone*</label>
           <input
             type="tel"
-            placeholder="233 00 000 0000"
-            name="telephone"
-            {...register("telephone")}
+            placeholder="123 123 1234"
+            name="cellPhone"
+            {...register("cellPhone")}
           />
           <span className="error-message">{errors.telephone?.message}</span>
         </div>
@@ -79,9 +78,8 @@ function ReservationForm() {
           <label htmlFor="occasion">Occasion (optional)</label>
           <div className="options">
             <select name="occasion" {...register("occasion")}>
-              <option value="select">Select occasion</option>
+              <option value="select">Select Occasion</option>
               <option value="birthday">Birthday</option>
-              <option value="engagement">Engagement</option>
               <option value="anniversary">Anniversary</option>
             </select>
           </div>
@@ -92,6 +90,7 @@ function ReservationForm() {
           <input
             type="number"
             placeholder="2"
+            min={1}
             name="guests"
             {...register("guests")}
           />

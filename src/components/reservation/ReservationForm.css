@@ -43,7 +43,7 @@
   border-radius: 5px;
 }
 
-.reservation-form-wrapper .select {
+.reservation-form-wrapper select {
   padding: 10px;
   outline: none;
   border: none;

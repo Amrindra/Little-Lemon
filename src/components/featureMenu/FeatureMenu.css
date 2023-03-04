@@ -7,6 +7,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .feature-menu-top-title {
@@ -17,7 +18,7 @@
 .feature-menu-top-button {
   height: 60px;
   padding: 15px 30px;
-  font-weight: 600;
+  font-weight: 500;
   background-color: #f4ce14;
   color: #333333;
   border-radius: 20px;
@@ -66,5 +67,6 @@
     padding: 15px 30px;
     font-size: 14px;
     width: 200px;
+    font-weight: bold;
   }
 }
