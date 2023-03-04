@@ -54,9 +54,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .reservation-wrapper {
-  }
-
   .reservation-container {
     flex-direction: column;
     width: 100%;
@@ -76,5 +73,26 @@
   .reservation-form {
     width: 100%;
     margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .reservation-wrapper {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .reservation-text {
+    /* padding: 0 ; */
+    margin-top: -30px;
+  }
+
+  .reservation-text h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+
+  .reservation-text p {
+    font-size: 1.1rem;
   }
 }
