@@ -4,7 +4,7 @@
       rgba(0, 0, 0, 0.42),
       rgba(0, 0, 0, 0.73)
     ),
-    url("https://a.cdn-hotels.com/gdcs/production141/d778/6b200721-9661-4680-aca2-d6e33ce46cf0.jpg");
+    url("https://user-images.githubusercontent.com/70451928/222874465-67747b54-06d5-44c5-ac95-517f13610466.jpg");
   width: 100%;
   background-size: cover;
 }
@@ -54,6 +54,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .reservation-wrapper {
+  }
+
   .reservation-container {
     flex-direction: column;
     width: 100%;
