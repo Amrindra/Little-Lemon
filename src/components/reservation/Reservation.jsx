@@ -4,7 +4,7 @@ import ReservationForm from "./ReservationForm";
 function Reservation() {
   return (
     <div className="reservation-wrapper">
-      <div className="reservation-container">
+      <div className="reservation-container global-max-width">
         <div className="reservation-text">
           <h2>Experience the perfect balance of tradition and luxury.</h2>
           <p>

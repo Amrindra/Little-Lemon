@@ -6,7 +6,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="hero-container">
+      <div className="hero-container global-max-width">
         <div className="hero-left">
           <h1>Little Lemon</h1>
           <h2>Boston</h2>

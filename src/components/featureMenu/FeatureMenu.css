@@ -1,10 +1,14 @@
 .feature-menu-container {
+  width: 85%;
+  margin: auto;
+}
+
+.feature-menu-wrapper{
   margin-top: 150px;
+
 }
 
 .feature-menu-top {
-  width: 85%;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,14 +41,18 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
-  width: 85%;
-  margin: 0 auto;
+  /* width: 85%;
+  margin: 0 auto; */
   padding: 50px 0;
 }
 
 @media screen and (max-width: 1024px) {
   .feature-menu-bottom {
     width: 95%;
+  }
+
+  .feature-menu-bottom {
+   grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -5,8 +5,8 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="header">
-      <div className="header-wrapper">
+    <div className="header ">
+      <div className="header-wrapper global-max-width">
         <div className="image-wrapper">
           <NavLink to="/">
             {<img className="logo-img" src={Logo} alt="Little Lemon logo" />}

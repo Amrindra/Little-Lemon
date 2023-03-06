@@ -19,9 +19,9 @@ const NavItems = (props) => {
         {sidebar ? <GrClose style={{ color: "red" }} /> : <GrMenu />}
       </div>
 
-      <nav className="">
+      <nav>
         <motion.ul
-          className={sidebar ? "nav-items active" : "nav-items"}
+          className={sidebar ? "nav-items active " : "nav-items"}
           initial={animateFrom}
           animate={animateTo}
           transition={{ delay: 0.05 }}

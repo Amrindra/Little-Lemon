@@ -16,7 +16,7 @@
     "react-hook-form": "7.43.2",
     "react-icons": "4.7.1",
     "react-router-dom": "6.8.1",
-    "react-scripts": "4.0.0",
+    "react-scripts": "^5.0.1",
     "yup": "1.0.2"
   },
   "devDependencies": {

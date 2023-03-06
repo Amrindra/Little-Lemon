@@ -3,7 +3,7 @@ import NavItems from "./NavItems";
 
 const Nav = (props) => {
   return (
-    <nav className="nav">
+    <nav className="nav ">
       <NavItems />
     </nav>
   );

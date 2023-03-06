@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <div className="footer-container">
+        <div className="footer-container global-max-width">
           <div className="footer-des">
             <img src={Logo} alt="Little Lemon logo" />
             <div className="opening-times">
